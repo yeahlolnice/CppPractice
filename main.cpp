@@ -4,10 +4,10 @@ using namespace std;
 
 void showMenu() {
     cout << "*******Menu*******"<< endl;
-    cout << "1. Balance"<< endl;
-    cout << "2. Deposit"<< endl;
-    cout << "3. Withdraw"<< endl;
-    cout << "4. Exit";
+    cout << "1. Balance" << endl;
+    cout << "2. Deposit" << endl;
+    cout << "3. Withdraw" << endl;
+    cout << "4. Exit" << endl;
     cout << "******************"<< endl;
 
 }
@@ -19,8 +19,10 @@ int main() {
     do
     {
         showMenu();
-
+        
+        cout << "Enter an option: ";
         cin >> option;
+        system("clear");
         switch (option) {
         case 1: cout << "Balance is $"<< balance<< endl; break;
         case 2: cout << "Deposit amount: ";
